@@ -1,22 +1,22 @@
 # alamat dimana website ini ditayangkan
-baseURL: "https://mozegram.raniaamina.id/"
+baseURL: "https://portfolio.arhavisual.netlify.com"
+#theme=
 languageCode: "en-us"
 metaDataFormat: "yaml"
 contentDir: "content"
 layoutDir: "layouts"
 publishDir: "public"
-title: "Mozegram!"
+title: "Arhavisual"
 disableKinds: ["taxonomy", "taxonomyTerm"]
-theme: "moze"
 params:
 # description untuk membuat meta website
-  description: "Mozegram! merupakan laman portofolio desain Rania Amina. Laman ini adalah bagian dari Mozelup! project yang dirintis pada tahun 2018."
+  description: "Arhavisual! merupakan laman portofolio desain Arhagus Budy."
 # images digunakan untuk mendaftarkan opengraph dan tag twitter
 # jika tidak diperlukan, Anda kosongi saja
   images: ["logo.svg"]
 # menu filter untuk portofolio, nanti akan muncul di samping tombol filter "Semua"
   portfolios:
-    filter: ["Inkscape","Gimp","Synfig/Sozi","Lain-Lain"]
+    filter: ["Inkscape","Gimp","Lain-Lain"]
 # daftar menu yang akan ditampilkan beserta tautannya
   menu:
     beranda:
@@ -41,5 +41,5 @@ params:
     instagram: "raniaamina"
     linkedin: "raniaamina"
     email: "me@raniaamina.id"
-# id google analytics, 
+# id google analytics,
 # googleAnalytics: UA-123-45
