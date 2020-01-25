@@ -1,0 +1,42 @@
+ <div class="text-center scrolltop" style="padding-top: 21px;"><a aria-label="back to top" href="#" title="back to top"><i class="fa fa-angle-up scroll icon" id="scroll" style="color: rgb(255,255,255);font-size: 37px;"></i></a></div>
+<!--for export only-->
+ <div class="footer-dark" style="background-color: #313139;">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col item social">
+                {{ if .Site.Params.Socmed.Telegram }}
+                    <a class="shadow-none" href="https://t.me/{{ .Site.Params.Socmed.Telegram }}" title="{{ .Site.Params.Socmed.Telegram }}"><img src="{{ "img/telegram-plane.svg" | absURL }}" alt="Telegram"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Twitter }}
+                    <a class="shadow-none" href="https://twitter.com/{{ .Site.Params.Socmed.Twitter }}" title="{{ .Site.Params.Socmed.Twitter }}"><img src="{{ "img/twitter.svg" | absURL }}" alt="Twitter"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Instagram }}
+                    <a class="shadow-none" href="https://instagram.com/{{ .Site.Params.Socmed.Instagram }}" title="{{ .Site.Params.Socmed.Instagram }}"><img src="{{ "img/instagram.svg" | absURL }}" alt="instagram"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Linkedin }}
+                    <a class="shadow-none" href="https://linkedin.com/in/{{ .Site.Params.Socmed.Linkedin }}" title="{{ .Site.Params.Socmed.Linkedin }}"><img src="{{ "img/linkedin.svg" | absURL }}" alt="Linkedin"></a>
+                {{ end }}
+                {{ if .Site.Params.Socmed.Email }}
+                    <a class="shadow-none" href="mailto:{{ .Site.Params.Socmed.Email }}" title="{{ .Site.Params.Socmed.Email }}"><img src="{{ "img/envelope.svg" | absURL }}" alt="Mail"></a>
+                {{ end }}
+                </div>
+            </div>
+            <p class="copyright">
+                Mozegram - 2019
+                <br>
+                Made with <img src="{{ "img/heart.svg" | absURL }}" alt="Love"> by <a class="copyright" href="https://github.com/artemtech">Artemtech</a>
+                <br>
+                Thanks to <a class="text-white" href="https://gohugo.io">Hugo</a>
+            </p>
+        </div>
+    </footer>
+</div>
+<!--delete this section when exporting document-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
+<script src="{{ "js/app.min.js" | absURL}}"></script>
+{{ template "_internal/google_analytics_async.html" . }}
+</body>
+</html>

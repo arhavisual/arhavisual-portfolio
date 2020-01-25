@@ -1,0 +1,11 @@
+<div class="container-fluid main-content" style="padding-right: 30px;padding-left: 30px;">
+    <main class="sortable">
+        <div id="isolde" class="isolde-default">
+        {{ range .Data.Pages }}
+            <div class="card" data-isolde-el="{{ .Params.category }}">
+                {{ .Content }}
+            </div>
+        {{ end }}
+        </div>
+    </main>
+</div>
